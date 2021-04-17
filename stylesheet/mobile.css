@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=mobile.css.map */
+body {
+  min-width: 375px;
+  max-width: 768px;
+  font-family: "Spartan", sans-serif;
+}
+/*# sourceMappingURL=mobile.css.map */
