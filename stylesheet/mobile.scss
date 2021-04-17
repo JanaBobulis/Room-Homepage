@@ -56,13 +56,20 @@ body {
         margin-top: 25px;
         display: flex;
         align-items: center;
+        width: 55%;
+        cursor: pointer;
     }
 
     a {
         letter-spacing: 10px;
+        overflow: hidden;
         text-transform: uppercase;
         font-weight: 600;
-        padding-right: 10px;
+        padding:10px 10px 10px 0px;
+    }
+
+    a:hover{
+        border-bottom: 3px solid $primaryColorDarkGray;
     }
 
     .material-icons {

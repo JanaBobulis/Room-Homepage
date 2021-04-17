@@ -63,13 +63,20 @@ body .shop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 55%;
+  cursor: pointer;
 }
 
 body a {
   letter-spacing: 10px;
+  overflow: hidden;
   text-transform: uppercase;
   font-weight: 600;
-  padding-right: 10px;
+  padding: 10px 10px 10px 0px;
+}
+
+body a:hover {
+  border-bottom: 3px solid #454545;
 }
 
 body .material-icons {
