@@ -13,8 +13,6 @@ body .the-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
 }
 
 body .slider-photo img,
@@ -23,25 +21,42 @@ body .photo-about-light img {
   width: 100%;
 }
 
-body .discover,
-body .about {
-  padding: 30px 15px;
+body .photo-about-dark {
+  padding-top: 25px;
 }
 
-body h1 {
+body .discover,
+body .about {
+  padding: 25px 15px;
+}
+
+body .discover h1, body .discover h2,
+body .about h1,
+body .about h2 {
   padding-top: 25px;
+}
+
+body .discover h1,
+body .about h1 {
   font-size: 30px;
 }
 
+body .discover h2,
+body .about h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
 body p {
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   color: #a1a1a1;
   font-weight: 400;
   padding: 20px 0px 20px 0px;
 }
 
 body .shop {
-  margin: 25px 0px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
