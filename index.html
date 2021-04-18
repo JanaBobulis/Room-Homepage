@@ -31,8 +31,8 @@
             <a href="#">About</a>
             <a href="#">Contact</a>
           </div>
-          <span onclick="openNav()"></span>
       </nav>
+      <span onclick="openNav()">&#9776</span>
       <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair"></img>
     </div>
   </div>
@@ -67,14 +67,12 @@
 </body>
 <script>
   function openNav() {
-    document.getElementById("navigation").style.height="50%";
+    document.getElementsByClassName("navigation").style.width="100%";
   }
 
   function closeNav() {
-    document.getElementById("navigation").style.width = "0%";
+    document.getElementsByClassName("navigation").style.width = "0%";
   }
-
-
 </script>
 </html>
 

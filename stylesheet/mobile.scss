@@ -14,6 +14,42 @@ body {
         flex-direction: column;
     }
 
+    .navigation, 
+    .closebtn {
+        position: absolute;
+    }
+
+    .navigation {
+       
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+    
+        .overlay {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            display: flex; 
+            flex-direction: row;
+
+            a {
+                padding: 15px;
+                letter-spacing: 1px;
+                display: block;
+            }
+        }
+
+        
+    }
+
+    span {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
     .slider-photo img,
     .photo-about-dark img,
     .photo-about-light img {
@@ -63,6 +99,7 @@ body {
         text-transform: uppercase;
         font-weight: 600;
         padding:10px 10px 10px 0px;
+        text-decoration: none;
     }
 
     a:hover{

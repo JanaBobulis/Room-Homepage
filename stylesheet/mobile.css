@@ -15,6 +15,45 @@ body .the-container {
           flex-direction: column;
 }
 
+body .navigation,
+body .closebtn {
+  position: absolute;
+}
+
+body .navigation {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .navigation .overlay {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .navigation .overlay a {
+  padding: 15px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+body span {
+  font-size: 35px;
+  cursor: pointer;
+}
+
 body .slider-photo img,
 body .photo-about-dark img,
 body .photo-about-light img {
@@ -72,6 +111,7 @@ body a {
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 10px 10px 0px;
+  text-decoration: none;
 }
 
 body a:hover {
