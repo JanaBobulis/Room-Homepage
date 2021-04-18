@@ -20,18 +20,20 @@
   </style>
 </head>
 <body>
-  <nav class="navigation">
-    <ul>
-      <li>Home</li>
-      <li>Shop</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
   <div class="the-container">
   <div class="slider-container">
     <div class="slider-photo">
-      <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair">
+      <nav class="navigation">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+          <div class="overlay">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+          <span onclick="openNav()"></span>
+      </nav>
+      <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair"></img>
     </div>
   </div>
   <div class="discover">
@@ -60,10 +62,20 @@
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jana Bobulis</a>.
   </div>
 </body>
-<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+<script>
+  function openNav() {
+    document.getElementById("navigation").style.height="50%";
+  }
+
+  function closeNav() {
+    document.getElementById("navigation").style.width = "0%";
+  }
+
+
+</script>
 </html>
 
 
