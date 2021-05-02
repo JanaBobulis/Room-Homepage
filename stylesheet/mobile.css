@@ -2,6 +2,7 @@ body {
   min-width: 375px;
   max-width: 768px;
   font-size: 12px;
+  margin: 0;
   font-family: "Spartan", sans-serif;
 }
 
@@ -15,43 +16,56 @@ body .the-container {
           flex-direction: column;
 }
 
-body .navigation,
-body .closebtn {
-  position: absolute;
-}
-
-body .navigation {
-  width: 100%;
+body .openBtn {
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  z-index: 100;
+  top: 2rem;
+  left: 1rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-body .navigation .overlay {
-  position: relative;
-  top: 5%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-body .navigation .overlay a {
-  padding: 15px;
-  letter-spacing: 1px;
-  display: block;
-}
-
-body span {
+body .openBtn span {
   font-size: 35px;
   cursor: pointer;
+}
+
+body .openBtn .xIcon {
+  display: none;
+}
+
+body #overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  list-style: none;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  background-color: white;
+  padding: 43px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+body #overlay li a {
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  color: #454545;
+  font-size: 13px;
+}
+
+body .showMenu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 body .slider-photo img,
@@ -121,6 +135,31 @@ body a:hover {
 body .material-icons {
   font-size: 40px;
   font-weight: 400px;
-  padding-left: 10px;
 }
+
+/* 
+#navigation {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+        background-color: aqua;
+    
+        #overlay {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            display: none; 
+            flex-direction: row;
+
+            a {
+                padding: 15px;
+                letter-spacing: 1px;
+                display: block;
+            }
+        }
+
+        */
 /*# sourceMappingURL=mobile.css.map */

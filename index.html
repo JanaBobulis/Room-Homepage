@@ -19,20 +19,23 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body id="body">
   <div class="the-container">
   <div class="slider-container">
     <div class="slider-photo">
-      <nav class="navigation">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-          <div class="overlay">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
+      <nav id="navigation">
+        <button href="javascript:void(0)" class="openBtn" onclick="openNav()">
+          <span class="menuIcon material-icons">menu</span>
+          <span class="xIcon material-icons">close</span>
+        </button>
+          <ul id="overlay">
+            <li><a href="#" class="menuLink">Home</a></li>
+            <li><a href="#" class="menuLink">Shop</a></li>
+            <li><a href="#" class="menuLink">About</a></li>
+            <li><a href="#" class="menuLink">Contact</a></li>
+          </ul>
       </nav>
-      <span onclick="openNav()">&#9776</span>
+      
       <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair"></img>
     </div>
   </div>
@@ -67,12 +70,41 @@
 </body>
 <script>
   function openNav() {
-    document.getElementsByClassName("navigation").style.width="100%";
+    let overlayContent = document.getElementById('overlay');
+    let openCloseBtn = document.getElementsByClassName('openBtn');
+    let xIcon = document.querySelector(".xIcon");
+    let menuIcon = document.querySelector(".menuIcon");
+
+    overlayContent.classList.contains("showMenu");
+
+    if(overlayContent.classList.contains("showMenu")) {
+      overlayContent.classList.remove("showMenu");
+      xIcon.style.display = "none";
+      menuIcon.style.display = "block"
+    } else {
+      overlayContent.classList.add("showMenu");
+      xIcon.style.display = "block";
+      xIcon.style.color = "hsl(0, 0%, 63%)"
+      menuIcon.style.display = "none"
+    }
+
+    if(overlayContent.style.display === "flex") {
+      overlayContent.style.display = "none"
+    } else {
+      overlayContent.style.display = "flex"
+    }
   }
 
-  function closeNav() {
-    document.getElementsByClassName("navigation").style.width = "0%";
-  }
+  let menuLinks = document.querySelectorAll(".menuLink");
+
+  menuLinks.forEach(
+    function(menuLink) {
+      menuLink.addEventListener("click", openNav());
+    }
+  )
+
+
+
 </script>
 </html>
 

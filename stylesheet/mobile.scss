@@ -7,48 +7,59 @@ body {
     min-width: 375px;
     max-width: 768px;
     font-size: 12px;
+    margin: 0;
     font-family: "Spartan", sans-serif;
 
-    .the-container{
-        display: flex;
-        flex-direction: column;
-    }
+        .the-container{
+            display: flex;
+            flex-direction: column;
+        }
 
-    .navigation, 
-    .closebtn {
-        position: absolute;
-    }
+        .openBtn {
+            position: fixed;
+            z-index: 100;
+            top: 2rem;
+            left: 1rem;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
 
-    .navigation {
-       
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transition: 0.3s;
-    
-        .overlay {
-            position: relative;
-            top: 5%;
-            width: 100%;
-            display: flex; 
-            flex-direction: row;
+            span {
+                font-size: 35px;
+                cursor: pointer;
+            }
 
-            a {
-                padding: 15px;
-                letter-spacing: 1px;
-                display: block;
+            .xIcon {
+                display: none;
             }
         }
 
-        
-    }
+        #overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            list-style: none;
+            transform: translateX(5%);
+            transition: transform 0.2s ease;
+            background-color: white;
+            padding: 43px;
+            justify-content: flex-end;
+            margin: 0;
 
-    span {
-        font-size: 35px;
-        cursor: pointer;
-    }
+            li a {
+                letter-spacing: 1px;
+                text-transform: lowercase;
+                color: $primaryColorDarkGray;
+                font-size: 13px;
+            }
+        }
+
+        .showMenu {
+            transform: translateX(0);
+        }
+
 
     .slider-photo img,
     .photo-about-dark img,
@@ -109,8 +120,32 @@ body {
     .material-icons {
         font-size: 40px;
         font-weight: 400px;
-        padding-left: 10px;
     }
-
-
+    
 }
+
+/* 
+#navigation {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+        background-color: aqua;
+    
+        #overlay {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            display: none; 
+            flex-direction: row;
+
+            a {
+                padding: 15px;
+                letter-spacing: 1px;
+                display: block;
+            }
+        }
+
+        */
