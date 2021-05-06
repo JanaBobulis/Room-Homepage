@@ -16,11 +16,11 @@ body {
         }
 
         .openBtn {
-            position: fixed;
+            position: absolute;
             z-index: 100;
             top: 2rem;
             left: 1rem;
-            color: white;
+            color: $primaryColorWhite;
             background: none;
             border: none;
             cursor: pointer;
@@ -33,10 +33,18 @@ body {
             .xIcon {
                 display: none;
             }
+
+        }
+
+        nav #page-logo {
+            width: 100px;
+            position: absolute;
+            top: 2.5rem;
+            left: 10rem;
         }
 
         #overlay {
-            position: fixed;
+            position: absolute;
             top: 0;
             right: 0;
             width: 100%;

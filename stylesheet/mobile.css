@@ -17,7 +17,7 @@ body .the-container {
 }
 
 body .openBtn {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 2rem;
   left: 1rem;
@@ -36,8 +36,15 @@ body .openBtn .xIcon {
   display: none;
 }
 
+body nav #page-logo {
+  width: 100px;
+  position: absolute;
+  top: 2.5rem;
+  left: 10rem;
+}
+
 body #overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
