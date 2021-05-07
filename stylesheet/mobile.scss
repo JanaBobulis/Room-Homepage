@@ -3,9 +3,8 @@ $primaryColorBlack: hsl(0, 0%, 100%);
 $primaryColorWhite: hsl(0, 0%, 100%);
 $primaryColorDarkGray: hsl(0, 0%, 27%);
 
+
 body {
-    min-width: 375px;
-    max-width: 768px;
     font-size: 12px;
     margin: 0;
     font-family: "Spartan", sans-serif;
@@ -61,6 +60,7 @@ body {
             transition: all 0.3s ease;
             display: inline-flex;
             justify-content: flex-end;
+            z-index: 10;
 
             li a {
                 letter-spacing: 1px;
@@ -75,6 +75,28 @@ body {
             transition: all 0.3s ease;
         }
 
+        .slideshow-container {
+            margin: auto;
+            position: relative;
+
+            .next-prev-buttons {
+                cursor: pointer;
+                position: absolute;
+                user-select: none;
+                right: 0;
+                bottom: 0;
+                padding: 0;
+
+                img {
+                    padding: 20px;
+                    width: 20px;
+                    background-color: black;
+            }
+            }
+
+        }
+
+
 
     .slider-photo img,
     .photo-about-dark img,
@@ -88,20 +110,20 @@ body {
 
     .discover,
     .about {
-        padding: 25px 15px;
+        padding: 25px 20px;
 
         h1, h2 {
             padding-top: 25px;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 25px;
         }
 
         h2 {
             text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 15px;
+            letter-spacing: 3px;
+            font-size: 13px;
         }
     }
 
@@ -109,7 +131,7 @@ body {
         line-height: 1.4rem;
         color: $primaryColorGray;
         font-weight: 400;
-        padding: 20px 0px 20px 0px;
+        padding: 10px 0px 20px 0px;
     }
 
     .shop {
@@ -128,14 +150,25 @@ body {
         text-decoration: none;
     }
 
-    a:hover{
+    /*a:hover{
         border-bottom: 3px solid $primaryColorDarkGray;
-    }
+    }*/
 
     .material-icons {
         font-size: 40px;
         font-weight: 400px;
     }
+
+    .attribution {
+        margin-top: 20px;
+
+        a {
+            letter-spacing: unset;
+            text-transform: unset;
+        }
+    }
+
+
     
 }
 

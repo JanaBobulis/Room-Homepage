@@ -11,12 +11,13 @@ function openNav() {
       xIcon.style.display = "none";
       menuIcon.style.display = "block"
       overlayContent.style.opacity = "0"
+
     } else {
       overlayContent.classList.add("showMenu");
       xIcon.style.display = "block";
       xIcon.style.color = "hsl(0, 0%, 63%)"
       menuIcon.style.display = "none"
-      overlayContent.style.opacity = "1"
+      overlayContent.style.opacity = "1";      
     }
 
   }
@@ -29,40 +30,32 @@ function openNav() {
     }
   )
 
+//slideshow
+let slideIndex = 1;
+showSlides(slideIndex);
 
-  /*
-  function openNav() {
-    let overlayContent = document.getElementById('overlay');
-    let openCloseBtn = document.getElementsByClassName('openBtn');
-    let xIcon = document.querySelector(".xIcon");
-    let menuIcon = document.querySelector(".menuIcon");
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    overlayContent.classList.contains("showMenu");
+function currentSlides(n) {
+  showSlides(slideIndex = n);
+}
 
-    if(overlayContent.classList.contains("showMenu")) {
-      overlayContent.classList.remove("showMenu");
-      xIcon.style.display = "none";
-      menuIcon.style.display = "block"
-    } else {
-      overlayContent.classList.add("showMenu");
-      xIcon.style.display = "block";
-      xIcon.style.color = "hsl(0, 0%, 63%)"
-      menuIcon.style.display = "none"
-    }
-
-    if(overlayContent.style.display === "flex") {
-      overlayContent.style.display = "none"
-    } else {
-      overlayContent.style.display = "flex"
-    }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  if(n > slides.length) {
+    slideIndex = 1;
+  } 
+  if(n < 1) {
+    slideIndex = slides.length;
+  }
+  for(i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
 
-  let menuLinks = document.querySelectorAll(".menuLink");
+  slides[slideIndex-1].style.display = "block"
+}
 
-  menuLinks.forEach(
-    function(menuLink) {
-      menuLink.addEventListener("click", openNav());
-    }
-  )
-  */
 

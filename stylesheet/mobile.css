@@ -1,9 +1,10 @@
 body {
-  min-width: 375px;
-  max-width: 768px;
   font-size: 12px;
   margin: 0;
   font-family: "Spartan", sans-serif;
+  /*a:hover{
+        border-bottom: 3px solid $primaryColorDarkGray;
+    }*/
 }
 
 body .the-container {
@@ -65,6 +66,7 @@ body #overlay {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 10;
 }
 
 body #overlay li a {
@@ -80,6 +82,29 @@ body nav #showMenu {
   transition: all 0.3s ease;
 }
 
+body .slideshow-container {
+  margin: auto;
+  position: relative;
+}
+
+body .slideshow-container .next-prev-buttons {
+  cursor: pointer;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+}
+
+body .slideshow-container .next-prev-buttons img {
+  padding: 20px;
+  width: 20px;
+  background-color: black;
+}
+
 body .slider-photo img,
 body .photo-about-dark img,
 body .photo-about-light img {
@@ -92,7 +117,7 @@ body .photo-about-dark {
 
 body .discover,
 body .about {
-  padding: 25px 15px;
+  padding: 25px 20px;
 }
 
 body .discover h1, body .discover h2,
@@ -103,21 +128,21 @@ body .about h2 {
 
 body .discover h1,
 body .about h1 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 body .discover h2,
 body .about h2 {
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 15px;
+  letter-spacing: 3px;
+  font-size: 13px;
 }
 
 body p {
   line-height: 1.4rem;
   color: #a1a1a1;
   font-weight: 400;
-  padding: 20px 0px 20px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 body .shop {
@@ -140,13 +165,18 @@ body a {
   text-decoration: none;
 }
 
-body a:hover {
-  border-bottom: 3px solid #454545;
-}
-
 body .material-icons {
   font-size: 40px;
   font-weight: 400px;
+}
+
+body .attribution {
+  margin-top: 20px;
+}
+
+body .attribution a {
+  letter-spacing: unset;
+  text-transform: unset;
 }
 
 /* 
