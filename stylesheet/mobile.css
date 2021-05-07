@@ -36,31 +36,35 @@ body .openBtn .xIcon {
   display: none;
 }
 
-body nav #page-logo {
+body nav .main-logo-container {
   width: 100px;
   position: absolute;
   top: 2.5rem;
-  left: 10rem;
+  left: 40%;
+}
+
+body nav #page-logo {
+  width: 100%;
+  height: auto;
 }
 
 body #overlay {
   position: absolute;
   top: 0;
-  right: 0;
   width: 100%;
+  right: 0;
   list-style: none;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   background-color: white;
-  padding: 43px;
+  padding: 43px 20px;
+  margin: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0;
 }
 
 body #overlay li a {
@@ -68,11 +72,12 @@ body #overlay li a {
   text-transform: lowercase;
   color: #454545;
   font-size: 13px;
+  padding: 10px 15px 10px 0px;
 }
 
-body .showMenu {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+body nav #showMenu {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body .slider-photo img,

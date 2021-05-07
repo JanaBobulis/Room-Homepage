@@ -36,36 +36,43 @@ body {
 
         }
 
-        nav #page-logo {
+        nav .main-logo-container {
             width: 100px;
             position: absolute;
             top: 2.5rem;
-            left: 10rem;
+            left: 40%;
+        }
+
+        nav #page-logo {
+            width: 100%;
+            height: auto;
+
         }
 
         #overlay {
             position: absolute;
             top: 0;
-            right: 0;
             width: 100%;
+            right: 0;
             list-style: none;
-            transform: translateX(5%);
-            transition: transform 0.2s ease;
             background-color: white;
-            padding: 43px;
-            justify-content: flex-end;
+            padding: 43px 20px;
             margin: 0;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            justify-content: flex-end;
 
             li a {
                 letter-spacing: 1px;
                 text-transform: lowercase;
                 color: $primaryColorDarkGray;
                 font-size: 13px;
+                padding: 10px 15px 10px 0px;
             }
         }
 
-        .showMenu {
-            transform: translateX(0);
+        nav #showMenu {
+            transition: all 0.3s ease;
         }
 
 
