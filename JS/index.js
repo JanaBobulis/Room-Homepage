@@ -3,23 +3,25 @@ function openNav() {
     let openCloseBtn = document.getElementsByClassName('openBtn');
     let xIcon = document.querySelector(".xIcon");
     let menuIcon = document.querySelector(".menuIcon");
+    let container = document.querySelector('body')
 
     overlayContent.classList.contains("showMenu");
+    container.classList.toggle("open-menu")
 
     if(overlayContent.classList.contains("showMenu")) {
       overlayContent.classList.remove("showMenu");
       xIcon.style.display = "none";
       menuIcon.style.display = "block"
       overlayContent.style.opacity = "0"
+      container.classList.remove("open-menu")
 
     } else {
       overlayContent.classList.add("showMenu");
       xIcon.style.display = "block";
       xIcon.style.color = "hsl(0, 0%, 63%)"
       menuIcon.style.display = "none"
-      overlayContent.style.opacity = "1";      
+      overlayContent.style.opacity = "1";  
     }
-
   }
 
   let menuLinks = document.querySelectorAll(".menuLink");

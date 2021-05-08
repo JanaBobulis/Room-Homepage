@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=desktop.css.map */
+@media only screen and (min-width: 769px) {
+  body {
+    min-width: 769px;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

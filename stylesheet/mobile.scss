@@ -3,6 +3,9 @@ $primaryColorBlack: hsl(0, 0%, 100%);
 $primaryColorWhite: hsl(0, 0%, 100%);
 $primaryColorDarkGray: hsl(0, 0%, 27%);
 
+.open-menu {
+    opacity: 0.3;
+}
 
 body {
     font-size: 12px;
@@ -40,6 +43,7 @@ body {
             position: absolute;
             top: 2.5rem;
             left: 40%;
+            z-index:10;
         }
 
         nav #page-logo {
@@ -89,6 +93,12 @@ body {
 
                 .prev {
                     margin-right: -3px;
+                }
+
+                .prev img:hover, 
+                .next img:hover {
+                    background-color: $primaryColorDarkGray;
+                    transition: 0.3s;
                 }
 
                 a {
@@ -156,6 +166,11 @@ body {
         font-weight: 600;
         padding:10px 10px 10px 0px;
         text-decoration: none;
+    }
+
+    .shop:hover {
+        color: $primaryColorGray;
+        transition: 0.3s;
     }
 
     /*a:hover{

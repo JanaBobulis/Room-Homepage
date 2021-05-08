@@ -1,3 +1,7 @@
+.open-menu {
+  opacity: 0.3;
+}
+
 body {
   font-size: 12px;
   margin: 0;
@@ -42,6 +46,7 @@ body nav .main-logo-container {
   position: absolute;
   top: 2.5rem;
   left: 40%;
+  z-index: 10;
 }
 
 body nav #page-logo {
@@ -101,6 +106,13 @@ body .slideshow-container .next-prev-buttons {
 
 body .slideshow-container .next-prev-buttons .prev {
   margin-right: -3px;
+}
+
+body .slideshow-container .next-prev-buttons .prev img:hover,
+body .slideshow-container .next-prev-buttons .next img:hover {
+  background-color: #454545;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .slideshow-container .next-prev-buttons a {
@@ -171,6 +183,12 @@ body a {
   font-weight: 600;
   padding: 10px 10px 10px 0px;
   text-decoration: none;
+}
+
+body .shop:hover {
+  color: #a1a1a1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .material-icons {
