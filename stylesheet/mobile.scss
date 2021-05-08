@@ -87,16 +87,24 @@ body {
                 bottom: 0;
                 padding: 0;
 
-                img {
-                    padding: 20px;
-                    width: 20px;
-                    background-color: black;
-            }
+                .prev {
+                    margin-right: -3px;
+                }
+
+                a {
+                    padding: 0;
+
+                    img {
+                        padding: 20px;
+                        width: 10px;
+                        background-color: black;
+                    }
+                }
+
+                
             }
 
         }
-
-
 
     .slider-photo img,
     .photo-about-dark img,
@@ -171,29 +179,3 @@ body {
 
     
 }
-
-/* 
-#navigation {
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transition: 0.3s;
-        background-color: aqua;
-    
-        #overlay {
-            position: relative;
-            top: 5%;
-            width: 100%;
-            display: none; 
-            flex-direction: row;
-
-            a {
-                padding: 15px;
-                letter-spacing: 1px;
-                display: block;
-            }
-        }
-
-        */

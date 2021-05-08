@@ -99,9 +99,17 @@ body .slideshow-container .next-prev-buttons {
   padding: 0;
 }
 
-body .slideshow-container .next-prev-buttons img {
+body .slideshow-container .next-prev-buttons .prev {
+  margin-right: -3px;
+}
+
+body .slideshow-container .next-prev-buttons a {
+  padding: 0;
+}
+
+body .slideshow-container .next-prev-buttons a img {
   padding: 20px;
-  width: 20px;
+  width: 10px;
   background-color: black;
 }
 
@@ -178,30 +186,4 @@ body .attribution a {
   letter-spacing: unset;
   text-transform: unset;
 }
-
-/* 
-#navigation {
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transition: 0.3s;
-        background-color: aqua;
-    
-        #overlay {
-            position: relative;
-            top: 5%;
-            width: 100%;
-            display: none; 
-            flex-direction: row;
-
-            a {
-                padding: 15px;
-                letter-spacing: 1px;
-                display: block;
-            }
-        }
-
-        */
 /*# sourceMappingURL=mobile.css.map */
