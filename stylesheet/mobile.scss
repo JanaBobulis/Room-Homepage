@@ -3,9 +3,9 @@ $primaryColorBlack: hsl(0, 0%, 100%);
 $primaryColorWhite: hsl(0, 0%, 100%);
 $primaryColorDarkGray: hsl(0, 0%, 27%);
 
-.open-menu {
-    opacity: 0.3;
-}
+//.open-menu {
+//    opacity: 0.3;
+//}
 
 body {
     font-size: 12px;
@@ -110,10 +110,7 @@ body {
                         background-color: black;
                     }
                 }
-
-                
             }
-
         }
 
     .slider-photo img,

@@ -2,5 +2,9 @@
   body {
     min-width: 769px;
   }
+  .the-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=desktop.css.map */

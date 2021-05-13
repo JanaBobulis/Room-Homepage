@@ -2,4 +2,8 @@
     body {
         min-width: 769px;
     }
+
+    .the-container {
+        flex-wrap: wrap; //wraps the whole container in to one and distributes items according to the width (remove flex direction)
+    }
 }
