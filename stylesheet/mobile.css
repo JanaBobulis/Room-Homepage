@@ -88,6 +88,10 @@ body .slideshow-container {
   position: relative;
 }
 
+body .slideshow-container .desktop-image {
+  display: none;
+}
+
 body .slideshow-container .next-prev-buttons {
   cursor: pointer;
   position: absolute;

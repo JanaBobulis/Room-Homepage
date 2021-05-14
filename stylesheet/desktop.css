@@ -1,10 +1,52 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 924px) and (max-width: 1440px) {
   body {
     min-width: 769px;
   }
-  .the-container {
+  body #container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
+  body .slider-container {
+    width: 55%;
+  }
+  body .slider-container .mobile-image {
+    display: none;
+  }
+  body .slider-container .desktop-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .slider-container #navigation button {
+    display: none;
+  }
+  body .slider-container #navigation .main-logo-container {
+    top: 3rem;
+    left: 3rem;
+    width: 80px;
+  }
+  body .discover {
+    width: 35%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  body .discover h1 {
+    font-size: 35px;
+  }
+  body .photo-about-dark {
+    width: 28%;
+    padding-top: 0;
+  }
+  body .about {
+    width: 40%;
+    margin: 0 auto;
+  }
+  body .photo-about-light {
+    width: 28%;
   }
 }
 /*# sourceMappingURL=desktop.css.map */

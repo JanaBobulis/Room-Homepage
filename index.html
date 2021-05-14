@@ -21,7 +21,7 @@
   </style>
 </head>
 <body id="body">
-  <div class="the-container">
+  <div class="the-container" id="container">
   <div class="slider-container">
     <div class="slider-photo">
       <nav id="navigation">
@@ -40,16 +40,19 @@
           </ul>
       </nav>
       <div class="slideshow-container">
-        <div class="slides">
-          <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair"></img>
+        <div class="slides image-hero-1">
+          <img src="images/mobile-image-hero-1.jpg" alt="photo of white chair" class="mobile-image"></img>
+          <img src="images/desktop-image-hero-1.jpg" alt="photo of white chair" class="desktop-image"></img>
         </div>
-        <div class="slides">
-          <img src="images/mobile-image-hero-2.jpg">
+        <div class="slides image-hero-2">
+          <img src="images/mobile-image-hero-2.jpg" class="mobile-image">
+          <img src="images/desktop-image-hero-2.jpg" class="desktop-image">
         </div>
-        <div class="slides">
-          <img src="images/mobile-image-hero-3.jpg">
+        <div class="slides image-hero-3">
+          <img src="images/mobile-image-hero-3.jpg" class="mobile-image">
+          <img src="images/desktop-image-hero-3.jpg" class="desktop-image">
         </div>
-        <div class="next-prev-buttons">
+        <div class="next-prev-buttons slideshow-button-container">
           <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
           <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
         </div>
@@ -64,6 +67,10 @@
       <div class="shop">
         <a>Shop now</a>
         <span class="material-icons">trending_flat</span>
+      </div>
+      <div class="next-prev-buttons discover-button-container">
+        <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
+        <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
       </div>
   </div>
   <div class="photo-about-dark">

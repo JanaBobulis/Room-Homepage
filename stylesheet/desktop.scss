@@ -1,9 +1,97 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 924px) and (max-width: 1440px) {
     body {
-        min-width: 769px;
+        margin: 0 auto;
+        max-width: 1440px;
+
+        #container {
+            flex-wrap: wrap; //wraps the whole container in to one and distributes items according to the width (remove flex direction)
+            flex-direction: unset;
+        }
+        .slider-container {
+            width: 55%;
+
+            .mobile-image {
+                display: none;
+            }
+
+            .desktop-image {
+                display: flex;
+            }
+
+            #navigation {
+                button {
+                    display: none;
+                }
+
+                .main-logo-container {
+                    top: 3rem;
+                    left: 3rem;
+                    width: 80px;
+                }
+            }
+
+            .slideshow-container {
+                .next-prev-buttons {
+                    display: none;
+                }
+            }
+        }
+
+        .discover {
+            width: 35%;
+            margin: 0 auto;
+            padding: 20px;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .next-prev-buttons {
+                cursor: pointer;
+                position: absolute;
+                user-select: none;
+                right: 0;
+                bottom: 0;
+                padding: 0;
+
+                .prev {
+                    margin-right: -3px;
+                }
+
+                .prev img:hover, 
+                .next img:hover {
+                    background-color: $primaryColorDarkGray;
+                    transition: 0.3s;
+                }
+
+                a {
+                    padding: 0;
+
+                    img {
+                        padding: 20px;
+                        width: 10px;
+                        background-color: black;
+                    }
+                }
+            }
+
+      
     }
 
-    .the-container {
-        flex-wrap: wrap; //wraps the whole container in to one and distributes items according to the width (remove flex direction)
+        .photo-about-dark {
+            width: 28%;
+            padding-top: 0;
+        }
+
+        .about {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        .photo-about-light {
+            width: 28%;
+        }
     }
+
+    
 }

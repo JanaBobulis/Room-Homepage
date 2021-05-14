@@ -83,6 +83,10 @@ body {
             margin: auto;
             position: relative;
 
+            .desktop-image {
+                display: none;
+            }
+
             .next-prev-buttons {
                 cursor: pointer;
                 position: absolute;
