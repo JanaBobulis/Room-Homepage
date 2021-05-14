@@ -1,4 +1,6 @@
-@media only screen and (min-width: 924px) and (max-width: 1440px) {
+@import "mobile.scss";
+
+@media only screen and (min-width: 924px) {
     body {
         margin: 0 auto;
         max-width: 1440px;
@@ -10,14 +12,11 @@
         .slider-container {
             width: 55%;
 
-            .mobile-image {
-                display: none;
+            .slider-photo {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
             }
-
-            .desktop-image {
-                display: flex;
-            }
-
             #navigation {
                 button {
                     display: none;
@@ -31,65 +30,86 @@
             }
 
             .slideshow-container {
+                height: 100%;
+
                 .next-prev-buttons {
                     display: none;
+                }
+
+                .image-hero-1 {
+                    background: url(/images/desktop-image-hero-1.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 100%;
+                    background-position: center;
                 }
             }
         }
 
         .discover {
+            margin: auto;
             width: 35%;
-            margin: 0 auto;
-            padding: 20px;
 
-            h1 {
-                font-size: 35px;
-            }
-
-            .next-prev-buttons {
-                cursor: pointer;
-                position: absolute;
-                user-select: none;
-                right: 0;
-                bottom: 0;
-                padding: 0;
-
-                .prev {
-                    margin-right: -3px;
+            
+    
+                h1 {
+                    font-size: 35px;
                 }
-
-                .prev img:hover, 
-                .next img:hover {
-                    background-color: $primaryColorDarkGray;
-                    transition: 0.3s;
-                }
-
-                a {
+    
+                .next-prev-buttons {
+                    cursor: pointer;
+                    position: absolute;
+                    user-select: none;
+                    right: 0;
+                    bottom: 0;
                     padding: 0;
-
-                    img {
-                        padding: 20px;
-                        width: 10px;
-                        background-color: black;
+    
+                    .prev {
+                        margin-right: -3px;
+                    }
+    
+                    .prev img:hover, 
+                    .next img:hover {
+                        background-color: $primaryColorDarkGray;
+                        transition: 0.3s;
+                    }
+    
+                    a {
+                        padding: 0;
+    
+                        img {
+                            padding: 20px;
+                            width: 10px;
+                            background-color: black;
+                        }
                     }
                 }
-            }
-
+            
+        }
+        
       
-    }
+    
 
         .photo-about-dark {
-            width: 28%;
+            width: 30%;
             padding-top: 0;
+            background-image: url(/images/image-about-dark.jpg);
+            background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
         }
 
         .about {
-            width: 40%;
+            width: 35%;
             margin: 0 auto;
         }
 
         .photo-about-light {
-            width: 28%;
+            width: 30%;
+            background-image: url(/images/image-about-light.jpg);
+            background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
         }
     }
 
