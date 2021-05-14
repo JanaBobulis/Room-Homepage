@@ -287,9 +287,6 @@ body .attribution a {
     width: 30%;
     padding-top: 0;
     background-image: url(/images/image-about-dark.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
   body .about {
     width: 35%;
@@ -298,6 +295,9 @@ body .attribution a {
   body .photo-about-light {
     width: 30%;
     background-image: url(/images/image-about-light.jpg);
+  }
+  body .photo-about-dark,
+  body .photo-about-light {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -84,6 +84,14 @@ body {
             margin: auto;
             position: relative;
 
+            .image-hero-1 {
+                background: url(/images/mobile-image-hero-1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                background-position: center;
+            }
+
             .desktop-image {
                 display: none;
             }
@@ -126,6 +134,11 @@ body {
 
     .photo-about-dark {
         padding-top: 25px;
+        background-image: url(/images/image-about-dark.jpg);
+    }
+
+    .photo-about-light {
+        background-image: url(/images/image-about-light.jpg);
     }
 
     .discover,
