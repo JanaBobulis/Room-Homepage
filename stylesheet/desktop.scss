@@ -9,14 +9,9 @@
             flex-wrap: wrap; //wraps the whole container in to one and distributes items according to the width (remove flex direction)
             flex-direction: unset;
         }
-        .slider-container {
-            width: 55%;
+        #slider-container {
+            width: 60%;
 
-            .slider-photo {
-                width: 100%;
-                height: 100%;
-                margin: 0 auto;
-            }
             #navigation {
                 button {
                     display: none;
@@ -30,7 +25,6 @@
             }
 
             .slideshow-container {
-                height: 100%;
 
                 .next-prev-buttons {
                     display: none;
@@ -38,17 +32,47 @@
 
                 .image-hero-1 {
                     background: url(/images/desktop-image-hero-1.jpg);
+                }
+
+                .image-hero-2 {
+                    background: url(/images/desktop-image-hero-2.jpg);
+                }
+
+                .image-hero-3 {
+                    background: url(/images/desktop-image-hero-3.jpg)
+                }
+
+                .slides {
                     background-repeat: no-repeat;
                     background-size: cover;
                     height: 100%;
                     background-position: center;
+                    padding-bottom: unset;
                 }
             }
         }
 
         .discover {
             margin: auto;
-            width: 35%;
+            width: 40%;
+            padding: 0;
+
+            .text-wrapper {
+                width: 70%;
+                padding: 20px 25px;
+                margin: 0 auto;
+            }
+
+            #discover-button-container {
+                display: block;
+                position: relative;
+
+                a img {
+                    padding: 29px;
+                    width: 14px;
+                    vertical-align: bottom;
+                }
+            }
 
             
     
@@ -84,14 +108,12 @@
                         }
                     }
                 }
-            
         }
-        
     
         .photo-about-dark {
             width: 30%;
-            padding-top: 0;
-            background-image: url(/images/image-about-dark.jpg);
+            padding-top: 0; 
+            padding-bottom: unset;
         }
 
         .about {
@@ -101,16 +123,7 @@
 
         .photo-about-light {
             width: 30%;
-            background-image: url(/images/image-about-light.jpg);
-        }
-
-        .photo-about-dark,
-        .photo-about-light {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            padding-bottom: unset;
         }
     }
-
-    
 }
