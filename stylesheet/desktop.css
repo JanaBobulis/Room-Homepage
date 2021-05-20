@@ -293,11 +293,16 @@ body .attribution a {
     margin-right: 50px;
   }
   body #slider-container #navigation .desktopOverlay li a, body #slider-container #navigation .desktopOverlay li #page-logo-li {
-    padding: 10px 25px 10px 0px;
+    margin: 10px 25px 10px 0px;
   }
   body #slider-container #navigation .desktopOverlay li a {
     color: white;
     font-size: 15px;
+    padding: 10px;
+  }
+  body #slider-container #navigation .desktopOverlay li a:hover {
+    border-bottom: 2px solid white;
+    overflow: hidden;
   }
   body #slider-container #navigation .main-logo-container {
     top: 3rem;

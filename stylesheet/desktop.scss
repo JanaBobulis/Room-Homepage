@@ -34,12 +34,18 @@
                     li {
 
                         a, #page-logo-li {
-                            padding: 10px 25px 10px 0px;
+                            margin: 10px 25px 10px 0px;
                         }
 
                         a{
                             color: $primaryColorWhite;
                             font-size: 15px;
+                            padding: 10px;
+                        }
+
+                        a:hover {
+                            border-bottom: 2px solid white;
+                            overflow: hidden;
                         }
                     }
                 }

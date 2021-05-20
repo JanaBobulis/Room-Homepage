@@ -72,20 +72,3 @@ function desktopDisplay() {
 window.onresize = desktopDisplay;
 
 desktopDisplay()
-
-
-/*
-function desktopDisplay() {
-  let navMenu = document.getElementById('navigation')
-  let overlayContent = document.getElementById('overlay');
-  let navLink = document.getElementById("navLink")
-  if (document.documentElement.clientWidth >= 924) {
-    navMenu.style.position = "relative";
-    overlayContent.style.backgroundColor = "transparent"
-    overlayContent.style.opacity = "1"
-    navLink.style.color = "white";
-    navLink.style.fontSize = "20px"
-    overlayContent.style.justifyContent = "center"
-  } 
-}
-*/
