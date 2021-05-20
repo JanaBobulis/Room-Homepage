@@ -85,35 +85,6 @@ body {
         nav #showMenu {
             transition: all 0.3s ease;
         }
-
-        .slideshow-container {
-            margin: auto;
-            position: relative;
-            height: 100%;
-
-            #image-hero-1-mob {
-                background: url(/images/mobile-image-hero-1.jpg);
-            }
-
-            #image-hero-2-mob {
-                background: url(/images/mobile-image-hero-2.jpg);
-            }
-
-            #image-hero-3-mob {
-                background: url(/images/mobile-image-hero-3.jpg);
-            }
-
-            #image-hero-1-mob,
-            #image-hero-2-mob,
-            #image-hero-3-mob {
-                padding-bottom: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 100%;
-                background-position: center;
-            }
-
-
             .desktop-image {
                 display: none;
             }
@@ -197,6 +168,10 @@ body {
         }
     }
 
+    #discover-button-container {
+        display: none;
+    }
+
     p {
         line-height: 1.4rem;
         color: $primaryColorGray;
@@ -241,8 +216,34 @@ body {
             letter-spacing: unset;
             text-transform: unset;
         }
+}
+
+@media only screen and (max-width: 624px) {
+    .slideshow-container {
+        margin: auto;
+        position: relative;
+        height: 100%;
+
+        #image-hero-1-mob {
+            background: url(/images/mobile-image-hero-1.jpg);
+        }
+
+        #image-hero-2-mob {
+            background: url(/images/mobile-image-hero-2.jpg);
+        }
+
+        #image-hero-3-mob {
+            background: url(/images/mobile-image-hero-3.jpg);
+        }
+
+        #image-hero-1-mob,
+        #image-hero-2-mob,
+        #image-hero-3-mob {
+            padding-bottom: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+        }
     }
-
-
-    
 }

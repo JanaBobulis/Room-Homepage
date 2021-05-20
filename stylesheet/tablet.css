@@ -175,10 +175,6 @@ body .next-prev-buttons a img {
   font-size: 13px;
 }
 
-#discover-button-container {
-  display: none;
-}
-
 p {
   line-height: 1.4rem;
   color: #a1a1a1;
@@ -229,7 +225,7 @@ a {
   text-transform: unset;
 }
 
-@media only screen and (max-width: 624px) {
+@media only screen and (min-width: 375px) and (max-width: 624px) {
   .slideshow-container {
     margin: auto;
     position: relative;
@@ -254,4 +250,16 @@ a {
     background-position: center;
   }
 }
-/*# sourceMappingURL=mobile.css.map */
+
+@media only screen and (min-width: 624px) {
+  body .slideshow-container .image-hero-1 {
+    background: url(/images/desktop-image-hero-1.jpg);
+  }
+  body .slideshow-container .image-hero-2 {
+    background: url(/images/desktop-image-hero-2.jpg);
+  }
+  body .slideshow-container .image-hero-3 {
+    background: url(/images/desktop-image-hero-3.jpg);
+  }
+}
+/*# sourceMappingURL=tablet.css.map */

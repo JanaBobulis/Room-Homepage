@@ -60,33 +60,6 @@
                     }
                 }
             }
-
-            .slideshow-container {
-
-                .next-prev-buttons {
-                    display: none;
-                }
-
-                .image-hero-1 {
-                    background: url(/images/desktop-image-hero-1.jpg);
-                }
-
-                .image-hero-2 {
-                    background: url(/images/desktop-image-hero-2.jpg);
-                }
-
-                .image-hero-3 {
-                    background: url(/images/desktop-image-hero-3.jpg)
-                }
-
-                .slides {
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    height: 100%;
-                    background-position: center;
-                    padding-bottom: unset;
-                }
-            }
         }
 
         .discover {
@@ -163,6 +136,63 @@
 
         .photo-about-light {
             width: 30%;
+            padding-bottom: unset;
+        }
+    }
+}
+
+@media only screen and (min-width: 625px) and (max-width: 923px) {
+    .slideshow-container {
+        position: relative;
+
+        .image-hero-1 {
+            background: url(/images/desktop-image-hero-1.jpg);
+        }
+
+        .image-hero-2 {
+            background: url(/images/desktop-image-hero-2.jpg);
+        }
+
+        .image-hero-3 {
+            background: url(/images/desktop-image-hero-3.jpg)
+        }
+
+        .slides {
+            padding-bottom: 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 924px) {
+    .slideshow-container {
+        width: 100%;
+        height: 100%;
+
+        .next-prev-buttons {
+            display: none;
+        }
+
+        .image-hero-1 {
+            background: url(/images/desktop-image-hero-1.jpg);
+        }
+
+        .image-hero-2 {
+            background: url(/images/desktop-image-hero-2.jpg);
+        }
+
+        .image-hero-3 {
+            background: url(/images/desktop-image-hero-3.jpg)
+        }
+
+        .slides {
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-position: center;
             padding-bottom: unset;
         }
     }

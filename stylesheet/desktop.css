@@ -3,9 +3,6 @@ body {
   max-width: 923px;
   margin: 0;
   font-family: "Spartan", sans-serif;
-  /*a:hover{
-        border-bottom: 3px solid $primaryColorDarkGray;
-    }*/
 }
 
 body .the-container {
@@ -88,39 +85,11 @@ body nav #showMenu {
   transition: all 0.3s ease;
 }
 
-body .slideshow-container {
-  margin: auto;
-  position: relative;
-  height: 100%;
-}
-
-body .slideshow-container #image-hero-1-mob {
-  background: url(/images/mobile-image-hero-1.jpg);
-}
-
-body .slideshow-container #image-hero-2-mob {
-  background: url(/images/mobile-image-hero-2.jpg);
-}
-
-body .slideshow-container #image-hero-3-mob {
-  background: url(/images/mobile-image-hero-3.jpg);
-}
-
-body .slideshow-container #image-hero-1-mob,
-body .slideshow-container #image-hero-2-mob,
-body .slideshow-container #image-hero-3-mob {
-  padding-bottom: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-position: center;
-}
-
-body .slideshow-container .desktop-image {
+body .desktop-image {
   display: none;
 }
 
-body .slideshow-container .next-prev-buttons {
+body .next-prev-buttons {
   cursor: pointer;
   position: absolute;
   -webkit-user-select: none;
@@ -132,88 +101,92 @@ body .slideshow-container .next-prev-buttons {
   padding: 0;
 }
 
-body .slideshow-container .next-prev-buttons .prev {
+body .next-prev-buttons .prev {
   margin-right: -3px;
 }
 
-body .slideshow-container .next-prev-buttons .prev img:hover,
-body .slideshow-container .next-prev-buttons .next img:hover {
+body .next-prev-buttons .prev img:hover,
+body .next-prev-buttons .next img:hover {
   background-color: #454545;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body .slideshow-container .next-prev-buttons a {
+body .next-prev-buttons a {
   padding: 0;
 }
 
-body .slideshow-container .next-prev-buttons a img {
+body .next-prev-buttons a img {
   padding: 20px;
   width: 10px;
   background-color: black;
   vertical-align: bottom;
 }
 
-body .slider-photo img,
-body .photo-about-dark img,
-body .photo-about-light img {
+.slider-photo img,
+.photo-about-dark img,
+.photo-about-light img {
   width: 100%;
 }
 
-body .slider-photo {
+.slider-photo {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-body .photo-about-dark {
+.photo-about-dark {
   padding-bottom: 65%;
   background-image: url(/images/image-about-dark.jpg);
 }
 
-body .photo-about-light {
+.photo-about-light {
   background-image: url(/images/image-about-light.jpg);
   padding-bottom: 65%;
 }
 
-body .photo-about-dark,
-body .photo-about-light {
+.photo-about-dark,
+.photo-about-light {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-body .discover,
-body .about {
+.discover,
+.about {
   padding: 25px 20px;
 }
 
-body .discover h1, body .discover h2,
-body .about h1,
-body .about h2 {
+.discover h1, .discover h2,
+.about h1,
+.about h2 {
   padding-top: 25px;
 }
 
-body .discover h1,
-body .about h1 {
+.discover h1,
+.about h1 {
   font-size: 25px;
 }
 
-body .discover h2,
-body .about h2 {
+.discover h2,
+.about h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 13px;
 }
 
-body p {
+#discover-button-container {
+  display: none;
+}
+
+p {
   line-height: 1.4rem;
   color: #a1a1a1;
   font-weight: 400;
   padding: 10px 0px 20px 0px;
 }
 
-body .shop {
+.shop {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +197,7 @@ body .shop {
   cursor: pointer;
 }
 
-body a {
+a {
   letter-spacing: 10px;
   overflow: hidden;
   text-transform: uppercase;
@@ -233,24 +206,53 @@ body a {
   text-decoration: none;
 }
 
-body .shop:hover {
+.shop:hover {
   color: #a1a1a1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-body .material-icons {
+/*a:hover{
+        border-bottom: 3px solid $primaryColorDarkGray;
+    }*/
+.material-icons {
   font-size: 40px;
   font-weight: 400px;
 }
 
-body .attribution {
+.attribution {
   margin-top: 40px;
 }
 
-body .attribution a {
+.attribution a {
   letter-spacing: unset;
   text-transform: unset;
+}
+
+@media only screen and (max-width: 624px) {
+  .slideshow-container {
+    margin: auto;
+    position: relative;
+    height: 100%;
+  }
+  .slideshow-container #image-hero-1-mob {
+    background: url(/images/mobile-image-hero-1.jpg);
+  }
+  .slideshow-container #image-hero-2-mob {
+    background: url(/images/mobile-image-hero-2.jpg);
+  }
+  .slideshow-container #image-hero-3-mob {
+    background: url(/images/mobile-image-hero-3.jpg);
+  }
+  .slideshow-container #image-hero-1-mob,
+  .slideshow-container #image-hero-2-mob,
+  .slideshow-container #image-hero-3-mob {
+    padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
 }
 
 @media only screen and (min-width: 924px) {
@@ -311,25 +313,6 @@ body .attribution a {
   }
   body #slider-container #navigation .main-logo-container #page-logo {
     display: none;
-  }
-  body #slider-container .slideshow-container .next-prev-buttons {
-    display: none;
-  }
-  body #slider-container .slideshow-container .image-hero-1 {
-    background: url(/images/desktop-image-hero-1.jpg);
-  }
-  body #slider-container .slideshow-container .image-hero-2 {
-    background: url(/images/desktop-image-hero-2.jpg);
-  }
-  body #slider-container .slideshow-container .image-hero-3 {
-    background: url(/images/desktop-image-hero-3.jpg);
-  }
-  body #slider-container .slideshow-container .slides {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-    padding-bottom: unset;
   }
   body .discover {
     margin: auto;
@@ -396,6 +379,54 @@ body .attribution a {
   }
   body .photo-about-light {
     width: 30%;
+    padding-bottom: unset;
+  }
+}
+
+@media only screen and (min-width: 625px) and (max-width: 923px) {
+  .slideshow-container {
+    position: relative;
+  }
+  .slideshow-container .image-hero-1 {
+    background: url(/images/desktop-image-hero-1.jpg);
+  }
+  .slideshow-container .image-hero-2 {
+    background: url(/images/desktop-image-hero-2.jpg);
+  }
+  .slideshow-container .image-hero-3 {
+    background: url(/images/desktop-image-hero-3.jpg);
+  }
+  .slideshow-container .slides {
+    padding-bottom: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 924px) {
+  .slideshow-container {
+    width: 100%;
+    height: 100%;
+  }
+  .slideshow-container .next-prev-buttons {
+    display: none;
+  }
+  .slideshow-container .image-hero-1 {
+    background: url(/images/desktop-image-hero-1.jpg);
+  }
+  .slideshow-container .image-hero-2 {
+    background: url(/images/desktop-image-hero-2.jpg);
+  }
+  .slideshow-container .image-hero-3 {
+    background: url(/images/desktop-image-hero-3.jpg);
+  }
+  .slideshow-container .slides {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
     padding-bottom: unset;
   }
 }

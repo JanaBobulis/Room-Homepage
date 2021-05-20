@@ -1,0 +1,20 @@
+@import "mobile.scss";
+
+@media only screen and (min-width: 624px) {
+    body {
+        .slideshow-container {
+            .image-hero-1 {
+                background: url(/images/desktop-image-hero-1.jpg);
+            }
+    
+            .image-hero-2 {
+                background: url(/images/desktop-image-hero-2.jpg);
+            }
+    
+            .image-hero-3 {
+                background: url(/images/desktop-image-hero-3.jpg)
+            }
+        }
+    }
+    
+}
