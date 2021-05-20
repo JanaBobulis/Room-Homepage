@@ -148,8 +148,8 @@ body .slideshow-container .next-prev-buttons a {
 }
 
 body .slideshow-container .next-prev-buttons a img {
-  padding: 30px;
-  width: 15px;
+  padding: 20px;
+  width: 10px;
   background-color: black;
   vertical-align: bottom;
 }
@@ -269,13 +269,43 @@ body .attribution a {
   body #slider-container {
     width: 60%;
   }
+  body #slider-container #navigation {
+    position: relative;
+  }
   body #slider-container #navigation button {
     display: none;
+  }
+  body #slider-container #navigation .desktopOverlay {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    opacity: 1 !important;
+    background-color: transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  body #slider-container #navigation .desktopOverlay .image-li {
+    margin-right: 50px;
+  }
+  body #slider-container #navigation .desktopOverlay li a, body #slider-container #navigation .desktopOverlay li #page-logo-li {
+    padding: 10px 25px 10px 0px;
+  }
+  body #slider-container #navigation .desktopOverlay li a {
+    color: white;
+    font-size: 15px;
   }
   body #slider-container #navigation .main-logo-container {
     top: 3rem;
     left: 3rem;
     width: 80px;
+  }
+  body #slider-container #navigation .main-logo-container #page-logo {
+    display: none;
   }
   body #slider-container .slideshow-container .next-prev-buttons {
     display: none;
@@ -305,6 +335,10 @@ body .attribution a {
     width: 70%;
     padding: 20px 25px;
     margin: 0 auto;
+  }
+  body .discover .shop {
+    margin-top: unset;
+    margin-bottom: 25px;
   }
   body .discover #discover-button-container {
     display: block;

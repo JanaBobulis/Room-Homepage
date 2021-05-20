@@ -148,8 +148,8 @@ body .slideshow-container .next-prev-buttons a {
 }
 
 body .slideshow-container .next-prev-buttons a img {
-  padding: 30px;
-  width: 15px;
+  padding: 20px;
+  width: 10px;
   background-color: black;
   vertical-align: bottom;
 }

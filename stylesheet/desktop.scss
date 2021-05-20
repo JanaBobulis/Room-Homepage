@@ -13,14 +13,45 @@
             width: 60%;
 
             #navigation {
+                position: relative;
+
                 button {
                     display: none;
+                }
+
+                .desktopOverlay {
+                    justify-content: flex-start;
+                    display: inline-flex;
+                    opacity: 1 !important;
+                    background-color: transparent;
+                    align-items: center;
+                    width: 90%;
+
+                    .image-li {
+                        margin-right: 50px;
+                    }
+
+                    li {
+
+                        a, #page-logo-li {
+                            padding: 10px 25px 10px 0px;
+                        }
+
+                        a{
+                            color: $primaryColorWhite;
+                            font-size: 15px;
+                        }
+                    }
                 }
 
                 .main-logo-container {
                     top: 3rem;
                     left: 3rem;
                     width: 80px;
+
+                    #page-logo {
+                        display: none;
+                    }
                 }
             }
 
@@ -63,6 +94,11 @@
                 margin: 0 auto;
             }
 
+            .shop {
+                margin-top: unset;
+                margin-bottom: 25px;
+            }
+
             #discover-button-container {
                 display: block;
                 position: relative;
@@ -74,8 +110,6 @@
                 }
             }
 
-            
-    
                 h1 {
                     font-size: 35px;
                 }
