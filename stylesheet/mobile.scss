@@ -80,6 +80,7 @@ body {
                             text-transform: lowercase;
                             color: $primaryColorDarkGray;
                             font-size: 13px;
+                            text-decoration: none;
                             padding: 10px 15px 10px 0px;
                         }
                     }
@@ -161,17 +162,18 @@ body {
         }
     }
 
+    p {
+        line-height: 1.4rem;
+        color: $primaryColorGray;
+        font-weight: 400;
+        padding: 10px 0px 20px 0px;
+    }
+
     .discover {
         #discover-button-container {
             display: none;
         }
 
-        p {
-            line-height: 1.4rem;
-            color: $primaryColorGray;
-            font-weight: 400;
-            padding: 10px 0px 20px 0px;
-        }
 
         .shop {
             margin-top: 25px;
