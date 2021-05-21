@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./stylesheet/mobile.css">
   <link rel="stylesheet" type="text/css" href="./stylesheet/desktop.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body id="body">
   <div class="the-container" id="container">
-  <div class="slider-container" id="slider-container">
-    <div class="slider-photo">
-      <nav id="navigation">
-        <button href="javascript:void(0)" data-toggle="slide-collapse" class="openBtn" onclick="openNav()">
-          <span class="menuIcon material-icons">menu</span>
-          <span class="xIcon material-icons">close</span>
-        </button>
-        <div class="main-logo-container">
-          <img src="./images/logo.svg" id="page-logo">
-        </div>
+    <div class="slider-container" id="slider-container">
+      <div class="slider-photo">
+        <nav id="navigation">
+          <button href="javascript:void(0)" data-toggle="slide-collapse" class="openBtn" onclick="openNav()">
+            <span class="menuIcon material-icons">menu</span>
+            <span class="xIcon material-icons">close</span>
+          </button>
+          <div class="main-logo-container">
+            <img src="./images/logo.svg" id="page-logo">
+          </div>
           <ul id="overlay">
             <li class="image-li"><img src="./images/logo.svg" id="page-logo-li"></li>
             <li><a href="#" class="menuLink" id="navLink">Home</a></li>
@@ -39,55 +47,56 @@
             <li><a href="#" class="menuLink" id="navLink">About</a></li>
             <li><a href="#" class="menuLink" id="navLink">Contact</a></li>
           </ul>
-      </nav>
-      <div class="slideshow-container">
-        <div class="slides image-hero-1" id="image-hero-1-mob">
-        </div>
-        <div class="slides image-hero-2" id="image-hero-2-mob">
-        </div>
-        <div class="slides image-hero-3" id="image-hero-3-mob">
-        </div>
-        <div class="next-prev-buttons" id="slideshow-button-container">
-          <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
-          <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
+        </nav>
+        <div class="slideshow-container">
+          <div class="slides image-hero-1" id="image-hero-1-mob">
+          </div>
+          <div class="slides image-hero-2" id="image-hero-2-mob">
+          </div>
+          <div class="slides image-hero-3" id="image-hero-3-mob">
+          </div>
+          <div class="next-prev-buttons" id="slideshow-button-container">
+            <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
+            <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="discover">
-    <div class="text-wrapper">
-      <h1>Discover innovative ways to decorate</h1>
-      <p>We provide unmatched quality, comfort, and style for property owners across the country. 
-    Our experts combine form and function in bringing your vision to life. Create a room in your 
-    own style with our collection and make your property a reflection of you and what you love.</p>
-    <div class="shop">
-      <a>Shop now</a>
-      <span class="material-icons">trending_flat</span>
+    <div class="discover">
+      <div class="text-wrapper">
+        <h1>Discover innovative ways to decorate</h1>
+        <p>We provide unmatched quality, comfort, and style for property owners across the country.
+          Our experts combine form and function in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.</p>
+        <div class="shop">
+          <a>Shop now</a>
+          <span class="material-icons">trending_flat</span>
+        </div>
+      </div>
+      <div class="next-prev-buttons" id="discover-button-container">
+        <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
+        <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
+      </div>
+    </div>
+    <div class="photo-about-dark">
+    </div>
+    <div class="about">
+      <h2>About our furniture</h2>
+      <p>Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+    <div class="photo-about-light">
     </div>
   </div>
-    <div class="next-prev-buttons" id="discover-button-container">
-      <a href="#" class="prev" onclick="plusSlides(-1)"><img src="./images/icon-angle-left.svg"></a>
-      <a href="#" class="next" onclick="plusSlides(1)"><img src="./images/icon-angle-right.svg"></a>
-    </div>
-  </div>  
-  <div class="photo-about-dark">
-  </div>
-  <div class="about">
-    <h2>About our furniture</h2>
-    <p>Our multifunctional collection blends design and function to suit your individual taste.
-    Make each room unique, or pick a cohesive theme that best express your interests and what
-    inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-    or anything in between. Product specialists are available to help you create your dream space.</p>
-  </div>
-  <div class="photo-about-light">
-  </div>
-</div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>
     Coded by <a href="#">Jana Bobulis.</a>
   </div>
 </body>
 <script src="JS/index.js"></script>
+
 </html>
 
 

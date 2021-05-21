@@ -9,6 +9,7 @@
             flex-wrap: wrap; //wraps the whole container in to one and distributes items according to the width (remove flex direction)
             flex-direction: unset;
         }
+
         #slider-container {
             width: 60%;
 
@@ -32,12 +33,12 @@
                     }
 
                     li {
-
-                        a, #page-logo-li {
+                        a,
+                        #page-logo-li {
                             margin: 10px 25px 10px 0px;
                         }
 
-                        a{
+                        a {
                             color: $primaryColorWhite;
                             font-size: 15px;
                             padding: 10px;
@@ -89,43 +90,43 @@
                 }
             }
 
-                h1 {
-                    font-size: 35px;
+            h1 {
+                font-size: 35px;
+            }
+
+            .next-prev-buttons {
+                cursor: pointer;
+                position: absolute;
+                user-select: none;
+                right: 0;
+                bottom: 0;
+                padding: 0;
+
+                .prev {
+                    margin-right: -3px;
                 }
-    
-                .next-prev-buttons {
-                    cursor: pointer;
-                    position: absolute;
-                    user-select: none;
-                    right: 0;
-                    bottom: 0;
+
+                .prev img:hover,
+                .next img:hover {
+                    background-color: $primaryColorDarkGray;
+                    transition: 0.3s;
+                }
+
+                a {
                     padding: 0;
-    
-                    .prev {
-                        margin-right: -3px;
-                    }
-    
-                    .prev img:hover, 
-                    .next img:hover {
-                        background-color: $primaryColorDarkGray;
-                        transition: 0.3s;
-                    }
-    
-                    a {
-                        padding: 0;
-    
-                        img {
-                            padding: 20px;
-                            width: 10px;
-                            background-color: black;
-                        }
+
+                    img {
+                        padding: 20px;
+                        width: 10px;
+                        background-color: black;
                     }
                 }
+            }
         }
-    
+
         .photo-about-dark {
             width: 30%;
-            padding-top: 0; 
+            padding-top: 0;
             padding-bottom: unset;
         }
 
@@ -154,7 +155,7 @@
         }
 
         .image-hero-3 {
-            background: url(/images/desktop-image-hero-3.jpg)
+            background: url(/images/desktop-image-hero-3.jpg);
         }
 
         .slides {
@@ -185,7 +186,7 @@
         }
 
         .image-hero-3 {
-            background: url(/images/desktop-image-hero-3.jpg)
+            background: url(/images/desktop-image-hero-3.jpg);
         }
 
         .slides {

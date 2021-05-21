@@ -1,12 +1,7 @@
-
 $primaryColorGray: hsl(0, 0%, 63%);
 $primaryColorBlack: hsl(0, 0%, 100%);
 $primaryColorWhite: hsl(0, 0%, 100%);
 $primaryColorDarkGray: hsl(0, 0%, 27%);
-
-//.open-menu {
-//    opacity: 0.3;
-//}
 
 body {
     font-size: 12px;
@@ -14,132 +9,128 @@ body {
     margin: 0;
     font-family: "Spartan", sans-serif;
 
-        .the-container{
-            display: flex;
-            flex-direction: column;
-        }
+    .the-container {
+        display: flex;
+        flex-direction: column;
+    }
 
-        .slider-container {
+    .slider-container {
+        width: 100%;
+
+        .slider-photo {
             width: 100%;
-        }
-        
+            height: 100%;
+            margin: 0 auto;
 
-        .openBtn {
-            position: absolute;
-            z-index: 100;
-            top: 2rem;
-            left: 1rem;
-            color: $primaryColorWhite;
-            background: none;
-            border: none;
-            cursor: pointer;
+            nav {
+                .openBtn {
+                    position: absolute;
+                    z-index: 100;
+                    top: 2rem;
+                    left: 1rem;
+                    color: $primaryColorWhite;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
 
-            span {
-                font-size: 35px;
-                cursor: pointer;
-            }
+                    span {
+                        font-size: 35px;
+                        cursor: pointer;
+                    }
 
-            .xIcon {
-                display: none;
-            }
-
-        }
-
-        nav .main-logo-container {
-            width: 100px;
-            position: absolute;
-            top: 2.5rem;
-            left: 40%;
-            z-index:10;
-        }
-
-        nav #page-logo {
-            width: 100%;
-            height: auto;
-
-        }
-
-        #overlay {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            right: 0;
-            list-style: none;
-            background-color: white;
-            padding: 43px 20px;
-            margin: 0;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            justify-content: flex-end;
-            z-index: 10;
-
-            li a {
-                letter-spacing: 1px;
-                text-transform: lowercase;
-                color: $primaryColorDarkGray;
-                font-size: 13px;
-                padding: 10px 15px 10px 0px;
-            }
-        }
-
-        nav #showMenu {
-            transition: all 0.3s ease;
-        }
-            .desktop-image {
-                display: none;
-            }
-
-            .next-prev-buttons {
-                cursor: pointer;
-                position: absolute;
-                user-select: none;
-                right: 0;
-                bottom: 0;
-                padding: 0;
-
-                .prev {
-                    margin-right: -3px;
+                    .xIcon {
+                        display: none;
+                    }
                 }
 
-                .prev img:hover, 
-                .next img:hover {
-                    background-color: $primaryColorDarkGray;
-                    transition: 0.3s;
+                .main-logo-container {
+                    width: 100px;
+                    position: absolute;
+                    top: 2.5rem;
+                    left: 40%;
+                    z-index: 10;
+
+                    #page-logo {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
 
-                a {
+                #showMenu {
+                    transition: all 0.3s ease;
+                }
+
+                #overlay {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    right: 0;
+                    list-style: none;
+                    background-color: white;
+                    padding: 43px 20px;
+                    margin: 0;
+                    transition: all 0.3s ease;
+                    display: inline-flex;
+                    justify-content: flex-end;
+                    z-index: 10;
+
+                    li {
+                        a {
+                            letter-spacing: 1px;
+                            text-transform: lowercase;
+                            color: $primaryColorDarkGray;
+                            font-size: 13px;
+                            padding: 10px 15px 10px 0px;
+                        }
+                    }
+                }
+            }
+
+            .slideshow-container {
+                .next-prev-buttons {
+                    cursor: pointer;
+                    position: absolute;
+                    user-select: none;
+                    right: 0;
+                    bottom: 0;
                     padding: 0;
 
-                    img {
-                        padding: 20px;
-                        width: 10px;
-                        background-color: black;
-                        vertical-align: bottom;
+                    .prev {
+                        margin-right: -3px;
+                    }
+
+                    .prev img:hover,
+                    .next img:hover {
+                        background-color: $primaryColorDarkGray;
+                        transition: 0.3s;
+                    }
+
+                    a {
+                        padding: 0;
+
+                        img {
+                            padding: 20px;
+                            width: 10px;
+                            background-color: black;
+                            vertical-align: bottom;
+                        }
                     }
                 }
             }
         }
-
+    }
     .slider-photo img,
     .photo-about-dark img,
     .photo-about-light img {
         width: 100%;
     }
 
-    .slider-photo {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
     .photo-about-dark {
-        padding-bottom: 65%;
         background-image: url(/images/image-about-dark.jpg);
     }
 
     .photo-about-light {
         background-image: url(/images/image-about-light.jpg);
-        padding-bottom: 65%;
     }
 
     .photo-about-dark,
@@ -147,13 +138,15 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        padding-bottom: 65%;
     }
 
     .discover,
     .about {
         padding: 25px 20px;
 
-        h1, h2 {
+        h1,
+        h2 {
             padding-top: 25px;
         }
 
@@ -168,41 +161,39 @@ body {
         }
     }
 
-    #discover-button-container {
-        display: none;
-    }
+    .discover {
+        #discover-button-container {
+            display: none;
+        }
 
-    p {
-        line-height: 1.4rem;
-        color: $primaryColorGray;
-        font-weight: 400;
-        padding: 10px 0px 20px 0px;
-    }
+        p {
+            line-height: 1.4rem;
+            color: $primaryColorGray;
+            font-weight: 400;
+            padding: 10px 0px 20px 0px;
+        }
 
-    .shop {
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
+        .shop {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
 
-    a {
-        letter-spacing: 10px;
-        overflow: hidden;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding:10px 10px 10px 0px;
-        text-decoration: none;
-    }
+            a {
+                letter-spacing: 10px;
+                overflow: hidden;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 10px 10px 10px 0px;
+                text-decoration: none;
+            }
+        }
 
-    .shop:hover {
-        color: $primaryColorGray;
-        transition: 0.3s;
+        .shop:hover {
+            color: $primaryColorGray;
+            transition: 0.3s;
+        }
     }
-
-    /*a:hover{
-        border-bottom: 3px solid $primaryColorDarkGray;
-    }*/
 
     .material-icons {
         font-size: 40px;
@@ -216,6 +207,7 @@ body {
             letter-spacing: unset;
             text-transform: unset;
         }
+    }
 }
 
 @media only screen and (max-width: 624px) {
