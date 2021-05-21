@@ -1,6 +1,6 @@
 ## About 
 
-E-commerce responsive homepage build based on design from Frontend Mentor. 
+Mobile first e-commerce responsive homepage build based on design from Frontend Mentor. 
 
 ### Programming languages 
 
