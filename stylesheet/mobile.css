@@ -90,6 +90,7 @@ body .slider-container .slider-photo nav #overlay li a {
   font-size: 13px;
   text-decoration: none;
   padding: 10px 15px 10px 0px;
+  font-weight: 600;
 }
 
 body .slider-container .slider-photo .slideshow-container .next-prev-buttons {
