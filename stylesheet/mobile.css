@@ -184,7 +184,7 @@ body .discover #discover-button-container {
 }
 
 body .discover .shop {
-  margin-top: 25px;
+  margin: 25px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
